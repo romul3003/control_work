@@ -4,15 +4,23 @@
 	background-color #383e49
 	color #fff
 	
-	.title
+	&__logo
+		display none
+
+		@media (min-width: landscape_phones)
+			display block
+			margin: 0 1rem 0 0
+
+	&__title
 		margin-bottom 0
 		
-		&::before
-			content: ""
-			position absolute
-			left -57px
-			width 37px
-			height 40px
-			background-image url('i/book.png')
-			background-repeat no-repeat
-			background-size cover
+		// &::before
+		// 	content: ""
+		// 	position absolute
+		// 	left -57px
+		// 	width 37px
+		// 	height 40px
+		// 	background-image url('i/book.png')
+		// 	background-repeat no-repeat
+		// 	background-size cover
+
