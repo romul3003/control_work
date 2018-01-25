@@ -1,0 +1,93 @@
+@font-face {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  src: url("fonts/ProximaNovaRegular.ttf");
+}
+@font-face {
+  font-family: "Proxima Nova Bold";
+  font-style: normal;
+  src: url("fonts/ProximaNovaBold.ttf");
+}
+html,
+body {
+  font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: #474d58;
+}
+body {
+  background-color: #ebeef6;
+}
+.title {
+  position: relative;
+  margin-bottom: 30px;
+  font-size: 2.125rem;
+  font-family: "Proxima Nova Bold", Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+.categories__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.inner_wrapper {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #d9dde5;
+  background-color: #fff;
+}
+.inner_wrapper a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  padding: 20px 15px;
+  color: #383e49;
+}
+.inner_wrapper a:hover {
+  text-decoration: none;
+  color: #007bff;
+}
+.image-wrap {
+  height: 106px;
+  line-height: 106px;
+}
+.categories__text {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.25rem;
+}
+.header {
+  margin-bottom: 30px;
+  padding: 25px 0;
+  background-color: #383e49;
+  color: #fff;
+}
+.header .title {
+  margin-bottom: 0;
+}
+.header .title::before {
+  content: "";
+  position: absolute;
+  left: -57px;
+  width: 37px;
+  height: 40px;
+  background-image: url("i/book.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}

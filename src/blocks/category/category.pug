@@ -1,0 +1,54 @@
+mixin b-category(items)
+	+b.categories.row
+		each item in items
+			+e.item.col-sm-6.col-xl-3
+				.inner_wrapper
+					a(href=item.url)
+						figure.image-wrap
+							+e('img').img(src=item.src, alt="")
+						+e('p').text= item.name
+
+- 
+	var gallery = 
+		[
+			{
+				url: '#',
+				src: asset('i/img-1.png'),
+				name: "Автотранспорт"
+			},
+			{
+				url: '#',
+				src: asset('i/img-2.png'),
+				name: "Будівництво, архітектура, землекористування"
+			},
+			{
+				url: '#',
+				src: asset('i/img-3.png'),
+				name: "Громадянство"
+			},
+			{
+				url: '#',
+				src: asset('i/img-4.png'),
+				name: "Захист прав дитини"
+			},
+			{
+				url: '#',
+				src: asset('i/img-5.png'),
+				name: "Реєстрація місця проживання/перебування"
+			},
+			{
+				url: '#',
+				src: asset('i/img-6.png'),
+				name: "Підприємницька діяльність"
+			},
+			{
+				url: '#',
+				src: asset('i/img-7.png'),
+				name: "Санітарне та епідемічне благополуччя, ветеринарна медицина"
+			},
+			{
+				url: '#',
+				src: asset('i/img-8.png'),
+				name: "Комунальне господарство"
+			}
+		]

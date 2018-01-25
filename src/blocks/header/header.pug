@@ -1,0 +1,6 @@
+mixin b-header(title)
+	+b('header').header
+		.container.d-flex.justify-content-center
+			//- +e('figure').logo
+			//- 	img(src=asset('i/book.png'))
+			+e("h1").title.title= title
